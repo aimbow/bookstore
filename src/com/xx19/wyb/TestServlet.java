@@ -15,14 +15,14 @@ import javax.servlet.http.HttpServletResponse;
 public class TestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private int count = 1;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public TestServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public TestServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see Servlet#init(ServletConfig)
@@ -52,3 +52,4 @@ public class TestServlet extends HttpServlet {
 	}
 
 }
+

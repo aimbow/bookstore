@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>>>财大书城 *** 社区<<</title>
-<style>
-	#comm {height:800px;}
-</style>
+    <meta charset="UTF-8">
+    <title>>>财大书城 *** 社区<<</title>
+    <style>
+        #comm {height:800px;}
+    </style>
 </head>
 <body>
 <jsp:include page="header.jsp?col=4"></jsp:include>

@@ -17,12 +17,12 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter({ "/login.do", "/register.do" })
 public class CheckUserFilter implements Filter {
 
-    /**
-     * Default constructor. 
-     */
-    public CheckUserFilter() {
-        // TODO Auto-generated constructor stub
-    }
+	/**
+	 * Default constructor.
+	 */
+	public CheckUserFilter() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see Filter#destroy()
@@ -37,15 +37,15 @@ public class CheckUserFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// place your code here
-		
-		String username = request.getParameter("uname");	// �����û���
-		String userpass = request.getParameter("upass");	// ��������
+
+		String username = request.getParameter("uname");	// 接收用户名
+		String userpass = request.getParameter("upass");	// 接收密码
 
 		PrintWriter out = response.getWriter();
 		response.setCharacterEncoding("gbk");
-		
+
 		if(username!=null && userpass!=null) {
-		
+
 			if(username.length()<6 || username.length()>20) {
 				out.print("username's length is wrong!");
 				return;

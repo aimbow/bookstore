@@ -172,6 +172,7 @@
 				</dl>
 			</li>
 		</ul>
+		</ul>
 	</div>
 	<div class="box" id="info">
 		<div class="caption"></div>

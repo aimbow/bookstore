@@ -15,12 +15,12 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter("/*")
 public class CharacterFilter implements Filter {
 
-    /**
-     * Default constructor. 
-     */
-    public CharacterFilter() {
-        // TODO Auto-generated constructor stub
-    }
+	/**
+	 * Default constructor.
+	 */
+	public CharacterFilter() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see Filter#destroy()
@@ -37,7 +37,7 @@ public class CharacterFilter implements Filter {
 		// place your code here
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
-		
+
 		// pass the request along the filter chain
 		chain.doFilter(request, response);
 	}
